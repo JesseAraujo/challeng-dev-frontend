@@ -1,0 +1,13 @@
+  
+.button-delete {
+    background: var(--red);
+    color: var(--white-700);
+    
+    transition: filter 0.2s;
+        
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+    
+ 

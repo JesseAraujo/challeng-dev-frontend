@@ -1,0 +1,34 @@
+<app-header-products></app-header-products>
+
+   
+<h1>Deletar Produto</h1>
+   
+<form>
+    <div class="input-group">
+        <label for="name">Produto</label>
+        <input placeholder="Categoria" [value]="product.name" name="name" disabled>
+    </div>
+
+    <div class="input-group">
+        <label for="name">Categoria</label>
+        <input placeholder="Categoria" [value]="product.category" name="category" disabled>
+    </div>
+    
+    <div class="input-group">
+        <label for="price">Valor (R$)</label>
+        <input placeholder="R$" [value]="product.price" name="price" disabled>
+    </div>
+    
+</form>  
+
+
+<div class="group-buttons">
+    <button (click)='cancel()' class="button-cancel">
+        Cancelar
+    </button>
+    
+    <button (click)='deleteProduct()' class="button-delete">
+        Deletar
+    </button>
+</div>
+

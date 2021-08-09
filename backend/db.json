@@ -1,0 +1,16 @@
+{
+  "categorys": [
+    {
+      "name": "werwer",
+      "description": "",
+      "products": [
+        {
+          "idProduct": 1,
+          "productName": "Camiseta",
+          "price": "12.99"
+        }
+      ],
+      "id": 1
+    }
+  ]
+}

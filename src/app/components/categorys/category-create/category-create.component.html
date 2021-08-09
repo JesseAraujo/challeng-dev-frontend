@@ -1,0 +1,30 @@
+<app-header-categorys></app-header-categorys>
+
+   
+<h1>Nova Categoria</h1>
+   
+<form>
+    <div class="input-group">
+        <label for="name">Categoria</label>
+        <input placeholder="Categoria" [(ngModel)]="category.name" name="name">
+    </div>
+    
+    <div class="input-group">
+        <label for="description">Decrição (opcional)</label>
+        <input placeholder="Descrição" [(ngModel)]="category.description" name="description">
+    </div>
+    
+</form>  
+
+
+<div class="group-buttons">
+    <button (click)='cancel()' class="button-cancel">
+        Cancelar
+    </button>
+    
+    <button (click)='createCategory()' class="button-post">
+        Salvar
+    </button>
+</div>
+
+

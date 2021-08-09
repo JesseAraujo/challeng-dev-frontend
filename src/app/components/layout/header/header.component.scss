@@ -1,0 +1,36 @@
+header {    
+    width: 100%;    
+    padding-top: 60px;
+
+    font-weight: 300;
+
+    
+    button {
+        background: none;
+        color: var(--white-700);  
+    
+    
+        transition: 0.5s;
+
+        fa-icon {        
+            color: var(--white-700);  
+            margin-right: 10px;  
+            font-size: 1.45rem;
+            
+            transition: 0.5s;     
+        }
+        
+        &:hover {              
+            color: var(--blue-400); 
+            
+            fa-icon {
+                color: var(--blue-400); 
+            }
+        }
+
+        
+    }   
+
+    
+}
+        

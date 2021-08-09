@@ -1,0 +1,190 @@
+
+:root {
+    --white-700: #FDFDFD;
+
+    --gray-200: #848484;
+    --gray-100: #C4C4C4;
+    --gray-800: #3D3D3D;
+
+    --blue-50: #EFFCFF;
+    --blue-300: #56ABBD;
+    --blue-400: #15778C;
+
+    --red: #C05C5C; 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url('./assets/background.png') no-repeat;
+    background-size: cover;
+}
+
+body {  
+    font: 400 1rem 'Poppins', sans-serif;
+    color: var(--gray-200);
+}
+
+button, input, textarea, select {
+    font: 400 1rem 'Poppins', sans-serif;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+
+    height: 100vh;
+
+    position: relative;
+}
+
+
+//form
+h1 {
+    font-size: 1.523rem;
+    margin-bottom: 20px;
+    color: var(--blue-400);
+}
+
+
+form {
+    width: 100%;
+    background: var(--white-700);
+    padding: 50px 30px;
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 20px;
+
+        input {
+            margin-top: 5px;
+    
+            padding: 10px 20px;
+    
+            border-radius: 50px;
+            border: 1px solid var(--blue-300);
+    
+            &::placeholder {
+                color: var(--gray-100);
+            }
+        }
+
+    } 
+
+}
+
+.group-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    button {
+        width: 300px;
+    
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 50px;
+    
+        &.button-post {
+            background: var(--blue-300);
+            color: var(--white-700);
+    
+            transition: 0.2s;
+        
+            &:hover {
+                background: var(--blue-400);
+            }
+        }
+    
+        &.button-cancel {
+            background: none;
+            color: var(--red);
+    
+            border: 1px dashed var(--red);
+    
+            transition: filter 0.2s;
+        
+            &:hover {
+                filter: brightness(0.4);
+            }
+        }
+
+        &:last-child {
+            margin-left: 5px;
+        }
+    }
+
+}
+
+
+
+.letring{        
+    width: 100%;
+    margin: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+
+
+    .letring-circle {
+        width: 80px;
+        height: 80px;
+        
+        border-radius: 50%; 
+    
+        color: var(--gray-200);
+        font-size: 1.25rem;
+    
+        border: 1px solid var(--gray-200);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;             
+    }
+
+    p {
+        margin-top: 5px;
+        color: var(--gray-200);
+    }
+   
+}
+
+
+
+

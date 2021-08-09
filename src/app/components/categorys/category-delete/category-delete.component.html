@@ -1,0 +1,28 @@
+<app-header-categorys></app-header-categorys>
+
+   
+<h1>Deletar Categoria</h1>
+   
+<form>
+    <div class="input-group">
+        <label for="name">Categoria</label>
+        <input placeholder="Categoria" [value]="category.name" name="name" disabled>
+    </div>
+    
+    <div class="input-group">
+        <label for="description">Decrição</label>
+        <input placeholder="Descrição" [value]="category.description" name="description" disabled>
+    </div>
+    
+</form>  
+
+
+<div class="group-buttons">
+    <button (click)='cancel()' class="button-cancel">
+        Cancelar
+    </button>
+    
+    <button (click)='deleteCategory()' class="button-delete">
+        Deletar
+    </button>
+</div>

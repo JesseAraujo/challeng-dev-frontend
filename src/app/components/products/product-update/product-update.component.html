@@ -1,0 +1,35 @@
+<app-header-products></app-header-products>
+
+   
+<h1>Atualizar Produto</h1>
+   
+<form>
+    <div class="input-group">
+        <label for="name">Produto</label>
+        <input placeholder="Categoria" [(ngModel)]="categorys.products" name="name">
+    </div>
+
+    <div class="input-group">
+        <label for="category">Categoria</label>
+        <select name="category" [(ngModel)]="categorys.products">         
+            <option  *ngFor="let category of categorysName" value={{category.name}} >{{category.name}}</option>            
+        </select>
+    </div> 
+    
+    <div class="input-group">
+        <label for="price">Valor (R$)</label>
+        <input placeholder="R$" [(ngModel)]="categorys.products" name="price">
+    </div>
+    
+</form>  
+
+
+<div class="group-buttons">
+    <button (click)='cancel()' class="button-cancel">
+        Cancelar
+    </button>
+    
+    <button (click)='updateCategory()' class="button-post">
+        Salvar
+    </button>
+</div>

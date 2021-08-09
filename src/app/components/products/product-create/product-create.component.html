@@ -1,0 +1,29 @@
+<app-header-products></app-header-products>
+
+   
+<h1>Novo Producto</h1>
+   
+<form>
+    <div class="input-group">
+        <label for="name">Produto</label>
+        <input placeholder="Categoria" [(ngModel)]="category.products" name="name">
+    </div>   
+    
+    <div class="input-group" >
+        <label for="price">Valor (R$)</label>
+        <input placeholder="R$" [(ngModel)]="category.products" name="price">
+    </div>
+    
+</form>  
+
+
+<div class="group-buttons">
+    <button (click)='cancel()' class="button-cancel">
+        Cancelar
+    </button>
+    
+    <button (click)='createProduct()' class="button-post">
+        Salvar
+    </button>
+</div>
+
