@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 
 import { faEdit, faTrash, faEye } from '@fortawesome/free-solid-svg-icons'
-import { Category } from '../../categorys/category.model'
-import { CategoryService } from '../../categorys/category.service'
+import { Products } from '../product.model'
+import { ProductService } from '../product.service'
 
 
 @Component({
@@ -16,16 +16,16 @@ export class ProductReadComponent implements OnInit {
   faTrash = faTrash
   faEye = faEye
 
-  categorys!: Category[]
+  products!: Products[]
 
   constructor(
-    private categoryService: CategoryService 
+    private prouctsService: ProductService 
   ) {}
 
 
   ngOnInit(): void {
-    this.categoryService.read().subscribe(products => {
-      this.categorys = products
+    this.prouctsService.read().subscribe(products => {
+      this.products = products
     })
   }
 

@@ -27,6 +27,8 @@ import { ProductDeleteComponent } from './components/products/product-delete/pro
 import { ProductShowComponent } from './components/products/product-show/product-show.component';
 import { ViewProductsComponent } from './pages/view-products/view-products.component';
 import { HeaderProductsComponent } from './components/products/layout/header/header-products.component';
+import { ProductInCategoryComponent } from './components/products/product-in-category/product-create.component';
+import { CategoryShowComponent } from './components/categorys/category-show/category-show.component';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { HeaderProductsComponent } from './components/products/layout/header/hea
     CategorysReadComponent,
     CategoryUpdateComponent,
     CategoryDeleteComponent,
+    CategoryShowComponent,
     HeaderComponent,
     FooterComponent,
     HeaderComponentCategorys,
@@ -46,8 +49,9 @@ import { HeaderProductsComponent } from './components/products/layout/header/hea
     ProductReadComponent,
     ProductDeleteComponent,
     ProductShowComponent,
+    ProductInCategoryComponent,
     ViewProductsComponent,
-    HeaderProductsComponent
+    HeaderProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,8 @@ import { HeaderProductsComponent } from './components/products/layout/header/hea
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

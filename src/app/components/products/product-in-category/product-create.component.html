@@ -6,14 +6,7 @@
     <div class="input-group">
         <label for="name">Produto</label>
         <input placeholder="Produto" [(ngModel)]="products.name" name="name">
-    </div>  
-    
-    <div class="input-group">
-        <label for="category">Categoria</label>
-        <select name="category" [(ngModel)]="products.category">         
-            <option  *ngFor="let category of categorys"  value={{category.name}} >{{category.name}}</option>            
-        </select>
-    </div>     
+    </div>   
     
     <div class="input-group" >
         <label for="price">Valor (R$)</label>

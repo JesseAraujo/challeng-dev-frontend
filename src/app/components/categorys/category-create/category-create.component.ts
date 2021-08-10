@@ -12,15 +12,16 @@ export class CategoryCreateComponent implements OnInit {
 
   category: Category = {
     name: '',  
-    description: '',
-    products: <any>[]
+    description: ''
   }
 
 
-  constructor(private route: Router, private categoryService: CategoryService) { }
+  constructor(
+    private route: Router, 
+    private categoryService: CategoryService
+  ) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {   
   }
 
   createCategory(): void {
@@ -30,7 +31,7 @@ export class CategoryCreateComponent implements OnInit {
     }
 
     this.categoryService.create(this.category).subscribe(() => {
-      this.categoryService.showMessage('Categoria criada com sucesso!');
+      alert('Categoria criada com sucesso!');
       this.route.navigate(['categorys']);
     })
 

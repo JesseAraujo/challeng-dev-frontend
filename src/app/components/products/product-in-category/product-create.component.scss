@@ -1,0 +1,15 @@
+.input-group {
+    select {
+        margin-top: 5px;    
+        padding: 14px 20px;    
+        border-radius: 50px;
+        border: 1px solid var(--blue-300);
+
+        option {
+            width: 50px;
+            font-size: 1.3rem;
+
+            color: var(--gray-800);
+        }
+    }
+}

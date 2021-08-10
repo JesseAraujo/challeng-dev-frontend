@@ -1,27 +1,61 @@
-# ChallengeDevFrontend
+<h2 align="center">
+  Challeng-Dev-FrontEnd
+</h2>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+<p align="center">
+ <a href="#sobre">Sobre</a> •
+ <a href="#telas">Telas</a> •
+ <a href="#tecnologias">Tecnologias</a> •  
+ <a href="#executar">Executar</a> •  
+ <a href="#autor">Autor</a>
+</p>
 
-## Development server
+## Sobre
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+App desenvolvido para processo de seleção da KCMS para dev Front-End
 
-## Code scaffolding
+## Telas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="/src/assets/print/home.png" width="700px;">
+<img src="/src/assets/print/categorias.png" width="700px;">
+<img src="/src/assets/print/produtos.png" width="700px;">
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tecnologias
 
-## Running unit tests
+- [Typescript](https://www.typescriptlang.org/)
+- [Angular](https://angular.io/)
+- [Sass](https://sass-lang.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Executar
 
-## Running end-to-end tests
+```bash
+# Faça o clone deste repositório para qualquer pasta de sua preferencia
+$ git clone https://github.com/JesseAraujo/challeng-dev-frontend.git
+# Vá até essa pasta para iniciar o json server
+$ cd challeng-dev-frontend/backend
+# rode esses comandos para instalar as dependências (lembrando que deverá ter o node instalado em sua máquina)
+$ yarn install || npm install
+# use esses comandos para rodar iniciar o server
+$ yarn start || npm start
+# Agora com o server rodando, vá até a pasta do app
+$ cd challeng-dev-frontend
+# rode esses comandos para instalar as dependências (lembrando que deverá ter o node instalado em sua máquina)
+$ yarn install || npm install
+# use esses comandos para rodar o Projeto
+$ yarn start || npm start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Autor
 
-## Further help
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/28305012?s=460&u=e947608a2d0a560ea99595c3b37e3a02ef1ad93b&v=4" width="100px;" alt=""/>
+ <br />
+Feito com amor por Jessé Brisola de Araujo. Entre em contato!
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<br />
+
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=link_do_seu_perfil_no_github)](https://github.com/JesseAraujo)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/diego-ferreira-34b6348b/)](https://www.linkedin.com/in/jesse-brisola-de-araujo/)
+[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=+5514996247077&text=Hello!)](https://api.whatsapp.com/send?phone=+5514996247077&text=Hello!)
+

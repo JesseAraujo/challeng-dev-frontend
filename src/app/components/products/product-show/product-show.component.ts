@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Products } from '../product.model';
 import { ProductService } from '../product.service';
 
@@ -18,8 +18,7 @@ export class ProductShowComponent implements OnInit {
 
   product!: Products
 
-  constructor(
-    private router: Router, 
+  constructor( 
     private productService: ProductService, 
     private route: ActivatedRoute
   ) { }

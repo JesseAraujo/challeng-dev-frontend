@@ -10,7 +10,7 @@ import { ProductService } from '../product.service';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.scss']
 })
-export class ProductCreateComponent implements OnInit {
+export class ProductInCategoryComponent implements OnInit {
 
   products: Products = {
     name: '',
@@ -18,29 +18,24 @@ export class ProductCreateComponent implements OnInit {
     category: '',
   }
 
-  categorys!: Category[] 
-  category!: Category
+  categorys!: Category 
 
   constructor(
     private router: Router, 
-    private categoryService: CategoryService,
     private productService: ProductService,
   ) { }
 
   ngOnInit(): void {  
-    this.categoryService.read().subscribe(categorys => {
-      this.categorys = categorys
-    }) 
-
+    let category = localStorage.getItem('category')?.replace(/"/g, '');  
+    this.products.category = category!
   }
-
+  
   createProduct(): void {   
     if ((this.products.name === '') || (this.products.price === '')) {
       alert('Favor preencher todos os campos')
       return
     }
-
-
+    
     this.productService.create(this.products).subscribe(() => {
       alert('Produto criado com sucesso!');
       this.router.navigate(['products'])
@@ -48,7 +43,7 @@ export class ProductCreateComponent implements OnInit {
   }
 
   cancel() {
-    this.router.navigate(['products'])
+    this.router.navigate(['categorys'])
   }
 
 }

@@ -9,7 +9,7 @@ import { Products } from './product.model';
 })
 export class ProductService {
 
-  api = "http://localhost:3001/categorys"
+  api = "http://localhost:3001/products"
 
 
   constructor(private snackBar: MatSnackBar,

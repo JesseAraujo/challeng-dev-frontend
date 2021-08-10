@@ -11,6 +11,8 @@ import { ProductCreateComponent } from './components/products/product-create/pro
 import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/products/product-delete/product-delete.component';
 import { ProductShowComponent } from './components/products/product-show/product-show.component';
+import { ProductInCategoryComponent } from './components/products/product-in-category/product-create.component';
+import { CategoryShowComponent } from './components/categorys/category-show/category-show.component';
 
 const routes: Routes = [
   { 
@@ -26,6 +28,10 @@ const routes: Routes = [
     component: CategoryCreateComponent
   },
   { 
+    path: 'categorys/createProducts/:nameCategory', 
+    component: ProductInCategoryComponent
+  },
+  { 
     path: 'categorys/update/:id', 
     component: CategoryUpdateComponent
   },
@@ -34,11 +40,15 @@ const routes: Routes = [
     component: CategoryDeleteComponent
   },
   { 
-    path: 'products', 
-    component: ViewProductsComponent
+    path: 'categorys/listProducts/:category', 
+    component: CategoryShowComponent  
   },
   { 
-    path: 'categorys/createProducts/:id', 
+    path: 'products', 
+    component: ViewProductsComponent 
+  },
+  { 
+    path: 'products/create', 
     component: ProductCreateComponent
   },
   { 
@@ -50,7 +60,7 @@ const routes: Routes = [
     component: ProductDeleteComponent
   },
   { 
-    path: 'products/show/:id', 
+    path: 'products/showProducts/:id', 
     component: ProductShowComponent
   }
 ];

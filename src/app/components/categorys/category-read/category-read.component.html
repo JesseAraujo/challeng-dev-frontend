@@ -3,22 +3,25 @@
         <tr>
             <th>Categoria</th>
             <th>Descrição</th>
-            <th></th>
-            <th></th>
+            <th>Incluir Produto</th>
+            <th>Ações</th>
         </tr>                
     </thead>
     <tbody>            
         <tr *ngFor="let category of categorys">
             <td class="categorys-name">{{category.name}}</td>                    
             <td class="categorys-description">{{category.description}}</td>                    
-            <td ><a routerLink="/categorys/createProducts/{{category.id}}">add</a></td>                    
+            <td ><a class="create-products-in-categorys" routerLink="/categorys/createProducts/{{category.name}}" (click)="salveStorage(category.name)">+</a></td>                    
             <td class="actions-icons">
                 <a routerLink='/categorys/update/{{category.id}}'>
                     <fa-icon [icon]="faEdit"></fa-icon>     
                 </a>
                 <a routerLink='/categorys/delete/{{category.id}}'>
                     <fa-icon [icon]="faTrash" class="delete-icon"></fa-icon>     
-                </a>                    
+                </a>      
+                <a routerLink='/categorys/listProducts/{{category.name}}' (click)="salveStorage(category.name)">
+                    <fa-icon [icon]="faEye" ></fa-icon>                      
+                </a>                
             </td>
         </tr>
            

@@ -1,0 +1,29 @@
+<app-header-categorys></app-header-categorys>
+
+   
+<h1>Produtos da categoria</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Valor(R$)</th>
+            <th>Ações</th>
+        </tr>                
+    </thead>
+    <tbody>            
+        <tr *ngFor="let product of products">
+            <td class="products-name">{{product.name}}</td>                    
+            <td class="products-price">R$ {{product.price}}</td>                    
+            <td class="actions-icons">
+                <a routerLink='/product/update/{{product.id}}'>
+                    <fa-icon [icon]="faEdit"></fa-icon>     
+                </a>
+                <a routerLink='/product/delete/{{product.id}}'>
+                    <fa-icon [icon]="faTrash" class="delete-icon"></fa-icon>     
+                </a>                
+            </td>
+        </tr>
+           
+    </tbody>
+</table>

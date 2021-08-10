@@ -31,14 +31,30 @@ table {
                 border-bottom: 1px solid var(--gray-100);
                     
                 &.categorys-name {
-                    width: 50%;
+                    width: 32%;
                 }
 
                 &.categorys-description {
-                    width: 40%;
+                    width: 25%;
+                }
+
+                
+                .create-products-in-categorys {
+                    background: var(--blue-300);
+                    color: var(--white-700);
+                        
+                    border-radius: 50px;
+                    padding: 10px 30px;
+
+                    transition: 0.2s;
+
+                    &:hover {
+                        background: var(--blue-400);
+                    }
                 }
                     
                 &.actions-icons {
+                    width: 200px;
 
                     display: flex;
                     justify-content: space-between;
@@ -78,5 +94,22 @@ table {
 
         }   
             
+    }
+}
+
+
+@media (max-width: 720px) {
+    
+    table, tbody {
+        display: flex;
+        flex-direction: column;
+
+        .actions-icons {
+            width: 200px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
     }
 }

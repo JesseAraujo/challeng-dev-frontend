@@ -12,31 +12,31 @@ import { ProductService } from '../product.service';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  categorysName!: Category[]
-  categorys!: Category
-
+  categorys!: Category[]
+  products!: Products
 
   constructor(
     private router: Router, 
     private route: ActivatedRoute,
+    private productService: ProductService,
     private categoryService: CategoryService
   ) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
-    this.categoryService.readById(String(id)).subscribe(category => {
-      this.categorys.products = category.products
+    this.productService.readById(String(id)).subscribe(products => {
+      this.products = products
     })
 
     this.categoryService.read().subscribe(categorys => {
-      this.categorysName = categorys
-    })
+      this.categorys = categorys
+    })   
   }
 
   updateCategory(): void {  
 
-    this.categoryService.update(this.categorys).subscribe(() => {
-      this.categoryService.showMessage('Produto alterado com sucesso!')
+    this.productService.update(this.products).subscribe(() => {
+      alert('Produto alterado com sucesso!')
       this.router.navigate(['products'])
     })
     
