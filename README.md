@@ -12,7 +12,8 @@
 
 ## Sobre
 
-App desenvolvido para processo de seleção da KCMS para dev Front-End
+App desenvolvido para processo de seleção da KCMS para dev Front-End. <br>
+Layout figma: https://www.figma.com/file/XY6KHxLWThTbv8QBAVWkUQ/challenge-dev-frontend
 
 ## Telas
 
